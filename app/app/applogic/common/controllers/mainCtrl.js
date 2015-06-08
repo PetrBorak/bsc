@@ -7,6 +7,7 @@ angular.module('main').controller('mainCtrl',['$scope','$stateParams','$state','
         preloader.show()
     })
     $scope.$on('$stateChangeSuccess',function(event){
+        console.log('stateChangeSuccess');
         $scope.$emit('closepreloader');
     })
 }])
