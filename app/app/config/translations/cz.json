@@ -1,0 +1,18 @@
+{
+  "Test SPA for BSC, ltd." : "Testovací SPA pro BSC s.r.o.",
+  "By Petr Borak" : "autor: Petr Borák",
+  "language" : "jazyk",
+  "czech" : "česky",
+  "english" : "anglicky",
+  "remove item" : "smazat položku",
+  "item's title" : "název položky",
+  "item's Id" : "ID",
+  "action" : "akce",
+  "item's detail" : "detail",
+  "remove item" : "odstranit",
+  "Remove selected items" : "odstranit vybrané položky",
+  "Detail of an item" : "Detail položky",
+  "Edit the title": "editovat název",
+  "This field is required": "Toto pole je povinné",
+  "Delete item": "smazat položku"
+}

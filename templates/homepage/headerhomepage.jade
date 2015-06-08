@@ -1,0 +1,17 @@
+header.header.header-homepage
+    div.row.row-header
+        div.left.hedaer-in.header-in-left
+            div.logotype
+                a(ng-href="/#/{{lang}}")
+                        img(alt="logotype of the BSC company",src="assets/img/bsc-logo.png")
+            h1 {{'Test SPA for BSC, ltd.' | translate}}
+            div.boraklogotype
+                span
+                    | {{'By Petr Borak' | translate}}
+                img.borakimglogotype(src="assets/img/borakblackerb.png")
+        div.row.header-in.header-in-row
+            div.language
+                   span {{"language" | translate}}
+                   ul
+                       li(setlang="cz") {{"czech" | translate}} |
+                       li(setlang="en") &nbsp;{{"english" | translate}}

@@ -1,0 +1,12 @@
+div.detailcontainer(ng-cloak="")
+    h1 {{"Detail of an item" | translate}}
+    form(name="detailform",novalidate="")
+        div.detail-form.detail-form-row
+            label(for="itemtitle")
+                | {{"Edit the title" | translate}}
+            input(id="itemtitle", type="text",name="itemtitle",ng-model="item.title",ng-required="true",ng-class="{invalid: detailform.$invalid}")
+            div.form-note(ng-show="detailform.$invalid")
+                | {{"This field is required" | translate}}
+        div.detail-form.detail-form-row
+            input(type="submit",ng-disabled="detailform.$invalid",ng-class="{disabled: detailform.$invalid}",ng-click="edit()")
+            a.remove(deleteitem="",ng-href="/#/") {{"Delete item" | translate}}

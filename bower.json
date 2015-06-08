@@ -1,0 +1,30 @@
+{
+  "name": "bsctest",
+  "version": "0.0.0",
+  "authors": [
+    "Petr <borak.petr@gmail.com>"
+  ],
+  "moduleType": [
+    "amd",
+    "es6",
+    "globals",
+    "node",
+    "yui"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ],
+  "devDependencies": {
+    "angular": "~1.4.0",
+    "angular-ui-router": "~0.2.15",
+    "jquery": "~2.1.4",
+    "angular-translate": "~2.7.2",
+    "angular-translate-loader-static-files": "~2.7.2",
+    "angular-resource": "~1.4.0"
+  }
+}

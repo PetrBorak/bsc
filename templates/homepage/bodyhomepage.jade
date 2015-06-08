@@ -1,0 +1,24 @@
+div.list
+    div.listin-header
+        div.listin-header.listin-remove-header
+            | {{'remove item' | translate}}
+        div.listin-header.listin-title-header
+            | {{"item's title" | translate}}
+        div.listin-header.listin-id-header
+            | {{"item's Id" | translate}}
+        div.listin-header.listin-action-header
+            | {{"action" | translate}}
+    div.listin(ng-class="{odd:$odd}" ng-repeat="item in list")
+        div.listin-remove
+           input(type="checkbox",settoremove="listtoremove")
+        div.listin-title
+            | {{item.title}}
+        div.listin-id
+            | {{item.id}}
+        div.listin-action
+            a(ng-href="/#/{{lang}}/detail/{{item.id}}") {{"item's detail" | translate}}
+            a(deleteitem="",href="/#/{{lang    }}") {{"remove item" | translate}}
+
+div.listnav
+    a.removeitems(ng-class="{disabled:listtoremove.length == 0}", removeitems="", href="/#/{{lang}}") {{"Remove selected items" | translate}}
+
