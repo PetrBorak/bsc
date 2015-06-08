@@ -31,5 +31,8 @@ gulp.task('html',function(){
 })
 
 gulp.task('default',function(){
-
+    'bower',
+    'templates',
+    'sass',
+    'html'
 })
