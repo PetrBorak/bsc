@@ -30,9 +30,10 @@ gulp.task('html',function(){
         .pipe(gulp.dest('./app/'))
 })
 
-gulp.task('default',function(){
+gulp.task('default',[
     'bower',
     'templates',
     'sass',
     'html'
+],function(){
 })
